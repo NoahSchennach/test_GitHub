@@ -6,6 +6,8 @@ public class Commit_test {
 		// TODO Auto-generated method stub
 
 		System.out.println("Commit Message test");
+		System.out.println("local commit test");
+		
 		
 	}
 
