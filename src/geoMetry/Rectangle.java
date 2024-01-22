@@ -22,4 +22,7 @@ public class Rectangle extends Body {
 		return (this.length * this.width);
 	}
 
+	public String toString() {
+		return "länge: " + this.length + "\n" + "breite:" + this.width;
+	}
 }
