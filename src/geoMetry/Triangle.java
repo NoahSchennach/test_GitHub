@@ -28,6 +28,9 @@ public class Triangle extends Body{
 	}
 
 
-		
+	public String toString() {
+		return "Seite a: " + this.siteA + "\n" + 
+				"Seite b: " + this.siteB + "\n" + "Seite c: " + this.siteC + "\n" + "Höhe: " + this.height;
 		
 }
+	}

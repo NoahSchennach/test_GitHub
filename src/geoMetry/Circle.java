@@ -21,7 +21,9 @@ public class Circle extends Body {
 		return this.pi * this.radius * this.radius;
 	}
 	
-
+	public String toString() {
+		return "radius: " + this.radius;
+	}
 	
 	
 }
