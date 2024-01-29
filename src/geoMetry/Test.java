@@ -8,6 +8,6 @@ public class Test {
 	
 	Group group = new Group();
 	
-	
+	group.addBodie(r2);
 	
 }

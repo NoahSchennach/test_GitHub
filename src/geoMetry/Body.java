@@ -7,7 +7,7 @@ public abstract class Body {
 	public abstract double circumfances();
 	public abstract double area();
 	
-	public double getxCoordinate() {
+	 public double getxCoordinate() {
 		return xCoordinate;
 	}
 	public void setxCoordinate(double xCoordinate) {

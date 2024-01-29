@@ -5,7 +5,11 @@ import java.util.ArrayList;
 
 public class Group {
 
-	ArrayList<Body> bodies = new ArrayList<Body>();
+	private ArrayList<Body> bodies;
+	
+	public Group() {
+	this.bodies = new ArrayList<Body>();
+	}
 	
 	public void addBodie(Body body) {
 		this.bodies.add(body);
@@ -41,12 +45,14 @@ public class Group {
 	
 	public double highestArea() {
 		double max = 0;
+		Body maxBody = this.bodies.get(0);
 		for(Body b : this.bodies) {
 			if(b.area()>max) {
-				max = b.area();
-				System.out.println("Biggest Body:" + b.toString());
+				maxBody = b;
+			
 			}
-		} return max;
+		}	System.out.println("Biggest Body:" + maxBody.toString()); 
+		return max;
 	}
 	
 
