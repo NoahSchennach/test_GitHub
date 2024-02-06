@@ -16,15 +16,26 @@ public class NewsFeed {
 
 
 
-
+/**
+ * Method for adding submisssions to a List
+ * @param s
+ */
 	public void addSubmisssion(Submissions s) {
 		this.submission.add(s);
 		}
 	
+/**
+ * method for removing submissions from a list
+ * @param s
+ */
 	public void removeSubmission(Submissions s) {
 		this.submission.remove(s);
 	}
 	
+	/**
+	 * Method to get a submission form a Specified user
+	 * @param user
+	 */
 	public void submissionsFromUser(String user) {
 		for(Submissions s : this.submission) {
 			if(s.getUserName().equals(user)) {
@@ -33,12 +44,19 @@ public class NewsFeed {
 		}
 	}
 	
+/**
+ * method to print all submission
+ */
 	public void printAllSubmissions() {
 		for(Submissions s : this.submission) {
 			System.out.println(s);
 		}
 	}
 	 
+	/**
+	 * Method to get all the submissions from a user
+	 * @param author
+	 */
 	 public void getSubmissionsFromUser(String author){
 	     for(Submissions s : this.submission) {
 	         if(s.getUserName().equals(author)) {
@@ -47,6 +65,10 @@ public class NewsFeed {
 	     }
 	 }
 	 
+	 /**
+	  * Method to remove the submissions from a user
+	  * @param author
+	  */
 	 public void removeSubmissionFromUser(String author) {
 		    for(Submissions s : this.submission) {
 		        if(s.getUserName().equals(author)) {

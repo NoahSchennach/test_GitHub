@@ -23,22 +23,33 @@ public abstract class Submissions {
 		this.comment = new ArrayList<Comment>();
 		// TODO Auto-generated constructor stub
 	}
+	/**
+	 * Method for giving a like
+	 */
 	public void giveLike() {
 		like = this.like + 1;
-		
+	
+	/**
+	 * Method for giving a comment
+	 */
 	}
 	public void giveComment(Comment c) {
 		this.comment.add(c);
 		
 	}
-	
+	/**
+	 * Method for printing all the comment
+	 */
 	public void printAllComments() {
 		for(Comment c : this.comment) {
 			System.out.println(c);
 		}
 		
 	}
-	
+	/**
+	 * Method for calculating the time when a post was sent
+	 * @return
+	 */
 	public long calculateTimeSpan() {
 		long timeSpan = ChronoUnit.MINUTES.between(timestamp, LocalDate.now());
 		
