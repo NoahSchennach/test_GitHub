@@ -27,4 +27,5 @@ public class Message extends Submissions {
 	public String toString() {
 		return "message :" + this.message +"User: " + this.userName;
 	
+	}
 }
