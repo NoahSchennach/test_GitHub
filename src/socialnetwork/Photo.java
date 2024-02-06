@@ -9,8 +9,12 @@ public class Photo extends Submissions {
 	private String photoName;
 	
 	
-	public Photo(String userName, LocalDate timestamp, int like, ArrayList<Comment> comment) {
-		super(userName, timestamp, like, comment);
+	public Photo(String userName, String fileName , String photoName ) {
+		super(userName);
+		this.fileName = fileName;
+		this.photoName = photoName;
+		
+		
 		// TODO Auto-generated constructor stub
 	}
 	public String getFileName() {
@@ -26,6 +30,10 @@ public class Photo extends Submissions {
 		this.photoName = photoName;
 	}
 	
+	public String toString() {
+		return "File name :" + this.fileName + "\t" + "User: " + this.userName + "\n"
+				+ "photo name :" +this.photoName + "\t" + "User: " + this.userName;
+	}
 	
 	
 }

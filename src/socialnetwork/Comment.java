@@ -24,8 +24,9 @@ public class Comment {
 		this.user = user;
 	}
 	
-	
-
+	public String toString() {
+		return "Comment: " +this.comment +"USer: " + this.user;
+	}
 	
 	
 }

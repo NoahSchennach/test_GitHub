@@ -10,8 +10,9 @@ public class Message extends Submissions {
 	
 	
 	
-	public Message(String userName, LocalDate timestamp, int like, ArrayList<Comment> comment) {
-		super(userName, timestamp, like, comment);
+	public Message(String userName,  String message ,ArrayList<Comment> comment) {
+		super(userName);
+		this.message = message;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -23,5 +24,7 @@ public class Message extends Submissions {
 		this.message = message;
 	}
 	
+	public String toString() {
+		return "message :" + this.message +"User: " + this.userName;
 	
 }
