@@ -31,5 +31,5 @@ public class Excercise1 {
 	System.out.println();
 	
 	}
-
+ 
 }
