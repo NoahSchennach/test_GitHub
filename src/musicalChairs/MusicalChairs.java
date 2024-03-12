@@ -53,8 +53,8 @@ public class MusicalChairs {
 	public String play() { 
 		if(this.names.size()== 0) { 
 			return null; 
-			
 		} 
+		
 	System.out.println("Die Spieler sind: " + this.toString()); 
 		while(this.names.size() > 1) { 
 			int randomNumber = ThreadLocalRandom.current().nextInt(); 
