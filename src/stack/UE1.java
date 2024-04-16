@@ -1,17 +1,14 @@
 package stack;
 
-import java.util.LinkedList;
-import java.util.List;
 
 public class UE1 {
 
 	
 	public static String reverseString(String input) {
-		//List<String> list = new LinkedList<String>();
 
 		String reversedString = new StringBuilder(input).reverse().toString();
-		
-		System.out.println(reversedString);
+		System.out.println("The original String was: " + input);
+		System.out.println("The reversed String is: " + reversedString);
 		return reversedString;
 	}
 	
@@ -21,7 +18,7 @@ public class UE1 {
 	
 	public static void main(String[]args) {
 		
-		reverseString("Moin");
-	
+		reverseString("Muhammed");
+		reverseString("Superdubimupi");
 	}
 }
