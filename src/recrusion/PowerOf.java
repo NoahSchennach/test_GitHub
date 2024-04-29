@@ -14,6 +14,6 @@ public class PowerOf {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(powerOf(2,2));
+		System.out.println(powerOf(2,4));
 	}
 }
