@@ -6,6 +6,7 @@ import java.time.LocalTime;
  
 public class CurrentDate {
  
+	
 	public static void main(String[] args) {
 		String filename = "Aktuelles_Datum_zeit.txt";
 		try 
@@ -16,7 +17,9 @@ public class CurrentDate {
 		 catch (FileNotFoundException e) {
 			System.err.println("Fehler: Datei wurde nicht geöffnet");
 		} 
-
+		
+	
+	
 	}
 
 }
