@@ -19,7 +19,7 @@ public class Divide {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		    divide(10,2);
+		    divide(10,3);
 	}
 
 	}
